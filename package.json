@@ -100,7 +100,6 @@
     "build-docs": "npm run build-lib && npm run build-docs-api && npm run build-docs-core && npm run build-docs-session-description-handler && npm run build-docs-simple-user && npm run build-docs-transport",
     "lint": "eslint --ext .ts .",
     "lint-fix": "eslint --ext .ts --fix .",
-    "version": "sed -i '' \"s/LIBRARY_VERSION = .*/LIBRARY_VERSION = \\\"$npm_package_version\\\";/\" src/version.ts",
-    "postinstall": "tsc -p src --outDir ./build"
+    "version": "sed -i '' \"s/LIBRARY_VERSION = .*/LIBRARY_VERSION = \\\"$npm_package_version\\\";/\" src/version.ts"
   }
 }
